@@ -12,7 +12,7 @@ stage("Maven Build"){
   sh "mvn compile"
   sh "mvn test"
   sh "mvn clean package"
-  //sh "mv target/*.war target/myweb.war"
+  sh "mv target/*.war target/petclinic.war"
        }
 }
  
