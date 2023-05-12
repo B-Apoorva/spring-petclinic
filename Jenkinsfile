@@ -8,7 +8,6 @@ stages{
       }
 stage("Maven Build"){
   steps{
-  sh "mvn verify"
   sh "mvn compile"
   sh "mvn test"
   sh "mvn clean package"
