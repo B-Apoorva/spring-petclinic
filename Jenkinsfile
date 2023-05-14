@@ -8,7 +8,7 @@ stages{
       }
 stage("Maven Build"){
   steps{
-  sh "mvn clean install package"
+  sh "mvn clean package"
   sh "mv target/*.war target/petclinic.war"
        }
 }
