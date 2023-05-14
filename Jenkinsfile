@@ -8,8 +8,6 @@ stages{
       }
 stage("Maven Build"){
   steps{
-//  sh "mvn compile"
- // sh "mvn test"
   sh "mvn clean install package"
   sh "mv target/*.war target/petclinic.war"
        }
